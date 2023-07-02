@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/serpijueguitos-react/static/css/main.ee2d1b6f.css",
+    "main.js": "/serpijueguitos-react/static/js/main.bb08a5dc.js",
+    "static/media/tloz-totk.jpg": "/serpijueguitos-react/static/media/tloz-totk.8cac19f679bb57f5ddf5.jpg",
+    "static/media/mw2.jpg": "/serpijueguitos-react/static/media/mw2.9783a5debe6527d03e43.jpg",
+    "static/media/elden-ring.jpg": "/serpijueguitos-react/static/media/elden-ring.076d5ea94afc5f6a3735.jpg",
+    "static/media/Serpiente.png": "/serpijueguitos-react/static/media/Serpiente.a2f74bef783e54da0a5f.png",
+    "index.html": "/serpijueguitos-react/index.html",
+    "main.ee2d1b6f.css.map": "/serpijueguitos-react/static/css/main.ee2d1b6f.css.map",
+    "main.bb08a5dc.js.map": "/serpijueguitos-react/static/js/main.bb08a5dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee2d1b6f.css",
+    "static/js/main.bb08a5dc.js"
+  ]
+}
