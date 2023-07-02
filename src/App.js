@@ -1,15 +1,21 @@
-import Header from './Header'
+import Navbar from './Navbar'
 import Footer from './Footer'
-import Main from './Main'
+import ItemListContainer from './ItemListContainer'
+import Saludo from './Saludo'
+
+
+
 
 function App () {
   return (
     <>
-      <Header />
-      <Main />      
-      <Footer/>
+      <Navbar />
+      <Saludo greeting={'Bienvenido a SerpiJueguitos'}/>
+      <ItemListContainer />
+      <Footer />
     </>
   )
 }
+
 
 export default App
