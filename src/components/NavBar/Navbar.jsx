@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './/img/Serpiente.png';
+import logo from '../img/Serpiente.png';
 import CartWidget from './CartWidget';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -13,18 +14,21 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
+              <section className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
 
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+              <NavLink to={`Inicio`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Inicio</NavLink>
 
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inventario</a>
+              <NavLink to={`Category`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Categorias</NavLink>
 
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Carrito</a>
+              <NavLink to={`Carrrito`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Carrito</NavLink>
 
-              <CartWidget />
+              </section>
+
             </div>
           </div>
         </div>
       </div>
+      <CartWidget />
     </nav>
   );
 };

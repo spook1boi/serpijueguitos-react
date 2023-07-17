@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,4 +11,4 @@ function CartWidget() {
   )
 }
 
-export default CartWidget
+export default CartWidget;
