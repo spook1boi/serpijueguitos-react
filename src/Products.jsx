@@ -2,80 +2,72 @@ const products = [{
     id: "0001",
     nombre: "Elden Ring",
     category: "Aventura",
-    descripcion: "Catalogado como mejor juego del año 2022, ofrece parajes de fantasia y sombrias mazmorras.",
+    descripcion: "Déjate guiar por la gracia para esgrimir el poder del Elden Ring y convertirte en un Señor de Elden en las Tierras Intermedias.",
     precio: 43000,
-    //descuento: 5000,
-    img: "../img/elden-ring.jpg"
+    img: require('../src/components/img/elden-ring.jpg')
     },
     {
 
     id: "0002",
     nombre: "Street Fighter 6",
     category: "Lucha",
-    descripcion: "#",
+    descripcion: "¡Aquí llega el peso pesado de Capcom! Incluye tres modos de juego: World Tour, Fighting Ground y Battle Hub.",
     precio: 49900,
-    //descuento: 10000,
-    img: "../img/street-fighter.jpg"
+    img: require('../src/components/img/street-fighter.jpg')
     },
     {
     
     id: "0003",
     nombre: "STAR WARS Jedi: Survivor",
     category: "Aventura",
-    descripcion: "#",
+    descripcion: "La historia de Cal Kestis continúa en STAR WARS Jedi: Survivor, un juego de acción en tercera persona de proporciones galácticas.",
     precio: 20990,
-    //descuento: 5000,
-    img: "../img/sw-jedisurv.jpg"
+    img: require('../src/components/img/sw-jedisurv.jpg')
     },
     {
     
     id: "0004",
     nombre: "Call of Duty: Modern Warfare II",
     category: "FPS",
-    descripcion: "Adquiere uno de los juegos mas esperados del año.",
+    descripcion: "En Call of Duty: Modern Warfare® II, los jugadores se verán inmersos en un conflicto a escala global sin precedentes",
     precio: 54990,
-    //descuento: 3000,
-    img: "../img/mw2.jpg"
+    img: require('../src/components/img/mw2.jpg')
     },
     {
     
     id: "0005",
     nombre: "Remnant II",
     category: "Aventura",
-    descripcion: "#",
+    descripcion: "Enfrenta a los supervivientes de la humanidad contra nuevas criaturas mortíferas y jefes divinos en mundos aterradores.",
     precio: 28500,
-    //descuento: 3000,
-    img: "../img/remnant2.jpg"
+    img: require('../src/components/img/remnant2.jpg')
     },
     {
     
     id: "0006",
     nombre: "The Legend Of Zelda: Tears Of The Kingdom",
     category: "Aventura",
-    descripcion: "#",
+    descripcion: "En esta secuela, decidirás tu propio camino a través de los extensos paisajes de Hyrule y las islas que flotan en los vastos cielos.",
     precio: 72900,
-    //descuento: 3000,
-    img: "../img/tloz-totk.jpg"
+    img: require('../src/components/img/tloz-totk.jpg')
     },
     {
 
     id: "0007",
     nombre: "Mortal Kombat 11",
     category: "Lucha",
-    descripcion: "#",
+    descripcion: "Mortal Kombat ha regresado mejor que nunca en esta entrega de la icónica saga.",
     precio: 47900,
-    //descuento: #,
-    img: "../img/mortalKombat11.jpg"
+    img: require('../src/components/img/mortalKombat11.jpg')
     },
         {
     
     id: "0008",
     nombre: "Tom Clancy's Rainbow Six: Siege",
     category: "FPS",
-    descripcion: "#",
+    descripcion: "Shooter táctico realista por equipos donde una cuidadosa planificación y ejecución son claves para la victoria.",
     precio: 54990,
-    //descuento: #,
-    img: "../img/rainbowSixSiege.png"
+    img: require('../src/components/img/rainbowSixSiege.png')
     },
     
     
@@ -90,6 +82,14 @@ const products = [{
   }  
 
   export const getProductsByCategory = () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(products)
+      }, 500)
+    })
+  }  
+
+  export const getProductById = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(products)

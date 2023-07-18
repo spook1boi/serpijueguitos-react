@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { getProductById } from '../../Products';
-import ItemDetail from '../itemDetail/itemDetail';
+import ItemDetail from '../ItemDetail/ItemDetail';
 
 import { useParams } from 'react-router-dom';
 
-const itemDetailContainer = () => {
+const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
 
     const { itemId } = useParams()
@@ -26,4 +26,4 @@ const itemDetailContainer = () => {
     )
 };
 
-export default itemDetailContainer
+export default ItemDetailContainer
