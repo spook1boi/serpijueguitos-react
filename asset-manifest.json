@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/serpijueguitos-react/static/css/main.ee2d1b6f.css",
-    "main.js": "/serpijueguitos-react/static/js/main.bb08a5dc.js",
+    "main.css": "/serpijueguitos-react/static/css/main.5c9a1a16.css",
+    "main.js": "/serpijueguitos-react/static/js/main.40fbab6f.js",
     "static/media/tloz-totk.jpg": "/serpijueguitos-react/static/media/tloz-totk.8cac19f679bb57f5ddf5.jpg",
+    "static/media/street-fighter.jpg": "/serpijueguitos-react/static/media/street-fighter.a84031fdbf5a9bd522f6.jpg",
     "static/media/mw2.jpg": "/serpijueguitos-react/static/media/mw2.9783a5debe6527d03e43.jpg",
+    "static/media/mortalKombat11.jpg": "/serpijueguitos-react/static/media/mortalKombat11.2b6cb5d45fd68d86cd06.jpg",
+    "static/media/rainbowSixSiege.png": "/serpijueguitos-react/static/media/rainbowSixSiege.c201a6b4d40fb162cd03.png",
+    "static/media/sw-jedisurv.jpg": "/serpijueguitos-react/static/media/sw-jedisurv.318390234271465b8bf7.jpg",
+    "static/media/remnant2.jpg": "/serpijueguitos-react/static/media/remnant2.bf8c966718ae71fed591.jpg",
     "static/media/elden-ring.jpg": "/serpijueguitos-react/static/media/elden-ring.076d5ea94afc5f6a3735.jpg",
     "static/media/Serpiente.png": "/serpijueguitos-react/static/media/Serpiente.a2f74bef783e54da0a5f.png",
     "index.html": "/serpijueguitos-react/index.html",
-    "main.ee2d1b6f.css.map": "/serpijueguitos-react/static/css/main.ee2d1b6f.css.map",
-    "main.bb08a5dc.js.map": "/serpijueguitos-react/static/js/main.bb08a5dc.js.map"
+    "main.5c9a1a16.css.map": "/serpijueguitos-react/static/css/main.5c9a1a16.css.map",
+    "main.40fbab6f.js.map": "/serpijueguitos-react/static/js/main.40fbab6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee2d1b6f.css",
-    "static/js/main.bb08a5dc.js"
+    "static/css/main.5c9a1a16.css",
+    "static/js/main.40fbab6f.js"
   ]
 }
