@@ -1,19 +1,16 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import products from '../../Products';
 
-const ItemDetail = ({ products }) => {
-  const { id } = useParams();
+const ItemDetail = (props) => {
+  const { id, nombre, caracteristica, precio } = props;
 
-  if (!products) {
-    return <div>Cargando productos...</div>;
-  }
-
-  const product = products.find((product) => product.id === id);
-
-  if (!product) {
-    return <div>No se encontró el producto.</div>;
-  }
+  return (
+    <div className="bg-white p-4 rounded-lg shadow-md">
+      <h2 className="text-xl font-semibold mb-2">{nombre}</h2>
+      <p className="text-gray-600 mb-2">ID: {id}</p>
+      <p className="text-gray-700 mb-2">Precio: ${precio}</p>
+      <p className="text-gray-700">Caracteristica: {caracteristica}</p>
+    </div>
+  );
 };
 
 export default ItemDetail;
