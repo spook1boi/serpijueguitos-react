@@ -1,30 +1,14 @@
 {
   "files": {
-    "main.css": "/serpijueguitos-react/static/css/main.86245300.css",
-    "main.js": "/serpijueguitos-react/static/js/main.4e835b96.js",
-    "static/media/street-fighter-2.jpg": "/serpijueguitos-react/static/media/street-fighter-2.394bfc6cad01b537a331.jpg",
-    "static/media/elden-ring-2.jpg": "/serpijueguitos-react/static/media/elden-ring-2.ac9b3dec3868fab03c57.jpg",
-    "static/media/tloz-totk-2.jpg": "/serpijueguitos-react/static/media/tloz-totk-2.a7117a0db6c920fce3e4.jpg",
-    "static/media/tloz-totk.jpg": "/serpijueguitos-react/static/media/tloz-totk.8cac19f679bb57f5ddf5.jpg",
-    "static/media/sw-jedisurv-2.jpg": "/serpijueguitos-react/static/media/sw-jedisurv-2.a527f1d67205c010b043.jpg",
-    "static/media/MortalKombat1-2.jpg": "/serpijueguitos-react/static/media/MortalKombat1-2.25896c72bc52d4e1fbd6.jpg",
-    "static/media/mw2-2.jpg": "/serpijueguitos-react/static/media/mw2-2.a5b58ace4c8d5b9a638c.jpg",
-    "static/media/street-fighter.jpg": "/serpijueguitos-react/static/media/street-fighter.a84031fdbf5a9bd522f6.jpg",
-    "static/media/rainbowSixSiege-2.jpg": "/serpijueguitos-react/static/media/rainbowSixSiege-2.bccbd7c9a809022b1893.jpg",
-    "static/media/mw2.jpg": "/serpijueguitos-react/static/media/mw2.9783a5debe6527d03e43.jpg",
-    "static/media/remnant2-2.jpg": "/serpijueguitos-react/static/media/remnant2-2.916c9322145cd5aceb28.jpg",
-    "static/media/MortalKombat1.jpg": "/serpijueguitos-react/static/media/MortalKombat1.ff354611732f9db562ba.jpg",
-    "static/media/rainbowSixSiege.png": "/serpijueguitos-react/static/media/rainbowSixSiege.c201a6b4d40fb162cd03.png",
-    "static/media/sw-jedisurv.jpg": "/serpijueguitos-react/static/media/sw-jedisurv.318390234271465b8bf7.jpg",
-    "static/media/remnant2.jpg": "/serpijueguitos-react/static/media/remnant2.bf8c966718ae71fed591.jpg",
-    "static/media/elden-ring.jpg": "/serpijueguitos-react/static/media/elden-ring.076d5ea94afc5f6a3735.jpg",
+    "main.css": "/serpijueguitos-react/static/css/main.cd048256.css",
+    "main.js": "/serpijueguitos-react/static/js/main.ca2dd58c.js",
     "static/media/Serpiente.png": "/serpijueguitos-react/static/media/Serpiente.a2f74bef783e54da0a5f.png",
     "index.html": "/serpijueguitos-react/index.html",
-    "main.86245300.css.map": "/serpijueguitos-react/static/css/main.86245300.css.map",
-    "main.4e835b96.js.map": "/serpijueguitos-react/static/js/main.4e835b96.js.map"
+    "main.cd048256.css.map": "/serpijueguitos-react/static/css/main.cd048256.css.map",
+    "main.ca2dd58c.js.map": "/serpijueguitos-react/static/js/main.ca2dd58c.js.map"
   },
   "entrypoints": [
-    "static/css/main.86245300.css",
-    "static/js/main.4e835b96.js"
+    "static/css/main.cd048256.css",
+    "static/js/main.ca2dd58c.js"
   ]
 }
