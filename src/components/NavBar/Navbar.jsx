@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../img/Serpiente.png';
+import logo from '../../logo/Serpiente.png';
 import CartWidget from './CartWidget';
 import { NavLink, Link } from 'react-router-dom';
 
@@ -54,11 +54,11 @@ const Navbar = () => {
                   )}
                 </div>
 
-                <NavLink to={`/carrrito`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+                <NavLink to={`/cart`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
                   <div className='text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>Carrito</div>
                 </NavLink>
 
-                <NavLink to={`/carrrito`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+                <NavLink to={`/cart`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
                   <CartWidget />
                 </NavLink>
               </section>
