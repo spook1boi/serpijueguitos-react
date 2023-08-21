@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/serpijueguitos-react/static/css/main.cd048256.css",
-    "main.js": "/serpijueguitos-react/static/js/main.ca2dd58c.js",
+    "main.css": "/serpijueguitos-react/static/css/main.098e917f.css",
+    "main.js": "/serpijueguitos-react/static/js/main.2034e5d1.js",
     "static/media/Serpiente.png": "/serpijueguitos-react/static/media/Serpiente.a2f74bef783e54da0a5f.png",
     "index.html": "/serpijueguitos-react/index.html",
-    "main.cd048256.css.map": "/serpijueguitos-react/static/css/main.cd048256.css.map",
-    "main.ca2dd58c.js.map": "/serpijueguitos-react/static/js/main.ca2dd58c.js.map"
+    "main.098e917f.css.map": "/serpijueguitos-react/static/css/main.098e917f.css.map",
+    "main.2034e5d1.js.map": "/serpijueguitos-react/static/js/main.2034e5d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd048256.css",
-    "static/js/main.ca2dd58c.js"
+    "static/css/main.098e917f.css",
+    "static/js/main.2034e5d1.js"
   ]
 }
