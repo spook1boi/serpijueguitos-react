@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '../src/components/NavBar/Navbar';
 import Footer from '../src/components/Footer/Footer';
@@ -7,21 +6,24 @@ import ItemDetailContainer from '../src/components/ItemDetailContainer/ItemDetai
 import CategoryList from '../src/components/CategoryList/CategoryList';
 import Cart from '../src/components/Cart/Cart';
 import { CartProvider } from '../src/components/Context/CartContext';
-import { db } from './services/firebase/firebaseConfig';
+import Checkout from '../src/components/Checkout/Checkout';
 
 function App() {
+
   return (
-    <BrowserRouter>
-      <CartProvider>
+    <CartProvider >
+      <BrowserRouter>
+      
       
         <Navbar />
         <div className="mt-8">
           <Routes>
-            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/serpijueguitos-react' element={<ItemListContainer />} />
             <Route path='/item/:id' element={<ItemDetailContainer />} />
             {/* Ruta alternativa para categoria */}
             <Route path='/category/:category' element={<CategoryList />} />
-            <Route path='/Cart' element={<Cart />} /> 
+            <Route path='/cart' element={<Cart />} /> 
+            <Route path='/checkout' element={<Checkout />} /> 
             <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
           </Routes>
         </div>
@@ -30,8 +32,9 @@ function App() {
           <Footer />
         </div>
 
-      </CartProvider>
-    </BrowserRouter>
+      
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+#SerpiJueguitos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Es un simulador de e-commerce (ventas por internet) enfocada en videojuegos, en la que se puede seleccionar el juego de preferencia, ver tanto sus caracteristicas como su precio, elegir la cantidad y pasar al carrito, a su vez tiene la posibilidad de volver a la tienda para seleccionar multiples juegos que quedaran guardados en el carrrito (Arriba a la derecha en la barra de navegacion). Una vez que uno finalice, puede pasar al "checkout" para anotar sus datos y recibir su orden del producto.
+
+###Las tecnologias utilizadas en este proyecto fueron: "Tailwind CSS", "FortAwesome (FontAwesome)", "Firebase", "FireStore", "React-Bootstrap", "SASS", "React Testing Library", "React hook form", "React Router DOM".
+
+###[Video de pryecto] https://imgur.com/a/8Sb4UUn
+
 
 ## Available Scripts
 

@@ -7,19 +7,17 @@ import { CartContext } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
-  const { totalQuantity } = useContext(CartContext)
+  const { cartQuantity } = useContext(CartContext);
 
   return (
     <Link to='/cart' className= 'CartWidget'>
       <div className='flex'>
       <FontAwesomeIcon icon={faShoppingCart} className="text-white text-xl cursor-pointer" />
-      <p className='text-white'>{totalQuantity}</p>
+      <span className='text-white'>{cartQuantity}</span>
       </div>
       </Link>
   )
 }
-
-
 
 
 export default CartWidget;

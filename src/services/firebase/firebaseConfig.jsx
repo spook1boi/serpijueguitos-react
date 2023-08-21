@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCNGrIMk_XYw3Yv-99F0WaJt5Y-uW4xIGc",
-  authDomain: "serpijueguitos.firebaseapp.com",
-  projectId: "serpijueguitos",
-  storageBucket: "gs://serpijueguitos.appspot.com/",
-  messagingSenderId: "327880566190",
-  appId: "1:327880566190:web:335984492f63b23706943f"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
 };
 
 

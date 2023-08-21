@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../Context/CartContext';
 
 const ItemDetail = ({ nombre, descripcion, caracteristica, precio, lanzamiento, img, img2, stock }) => {
   const [quantityAdded, setQuantityAdded] = useState(0);
+  const { addItem } = useContext(CartContext);
 
   const handleAddToCart = (quantity) => {
     setQuantityAdded(quantity);
+    addItem({
+      id: Math.random(),
+      descripcion,
+      precio,
+      cantidad: quantity,
+      imagen: img,
+    }, quantity);
   };
 
   return (
@@ -24,14 +33,15 @@ const ItemDetail = ({ nombre, descripcion, caracteristica, precio, lanzamiento, 
 
           <ItemCount stock={stock} initial={1} onAdd={handleAddToCart} />
           {quantityAdded > 0 && (
-            <Link to="/cart" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full inline-block mt-4">
-              Ir al carrito
-            </Link>
+            <>
+              <Link to="/cart" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full inline-block mt-4">
+                Ir al carrito
+              </Link>
+              <Link to="/serpijueguitos-react" className="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded-full inline-block mt-2">
+                Volver a catálogo
+              </Link>
+            </>
           )}
-
-          <Link to="/" className="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded-full inline-block mt-2">
-            Volver a catálogo
-          </Link>
         </div>
       </div>
       <div className="mt-8">

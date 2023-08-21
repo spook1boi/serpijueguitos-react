@@ -1,41 +1,48 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
-export const CartContext = createContext({
-    cart: []
-})
 
-export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+export const CartContext = createContext();
 
-  console.log(cart)
 
-  const addItem = (item, quantity) => {
-    if (isInCart(!item.id)) {
-      const updatedCart = cart.map((prod) =>
-      setCart((prev) => [...prev, { ...item, quantity }])
-      )
-      setCart(updatedCart);
-    } else {
-      console.error('El producto ya fue agregado')
+export const CartProvider = ({children}) => {
+
+    const [cart, setCart] = useState([]);
+
+    const addItem = (item, quantity) => {
+        const addItem = { ...item, quantity };
+
+        const newCart = [...cart];
+        const isInCart = newCart.find((producto) => producto.id === addItem.id);
+
+        if (isInCart) {
+            isInCart.quantity += quantity;
+        } else {
+          newCart.push(addItem);
+        }
+        setCart(newCart);
     }
-  };
 
-    const removeItem = (itemId) => {
-        const cartUpdated = cart.filter(prod => prod.id !== itemId)
-        setCart(cartUpdated)
+    const cartQuantity = () => {
+        return cart.reduce((acc, prod) => acc + prod.quantity, 0);
+    }
+
+    const total = () => {
+        return cart.reduce((acc, prod) => acc + prod.precio * prod.quantity, 0);
     }
 
     const clearCart = () => {
-        setCart([])
+        setCart([]);
     }
 
-    const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId)
-    }
+    useEffect(() => {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }, [cart])
+    
 
     return (
-      <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
-        {children}
-      </CartContext.Provider>
-    );
-  };
+        <CartContext.Provider value={ {cart, addItem, cartQuantity, total, clearCart} }>
+            {children}
+        </CartContext.Provider>
+    )
+
+}
